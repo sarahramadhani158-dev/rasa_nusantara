@@ -1,0 +1,84 @@
+/* =========================
+   RESPONSIVE MOBILE (<768px)
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 250px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 26px;
+    }
+
+    /* PETA */
+    .peta-img {
+        width: 100%;
+    }
+
+    /* REKOMENDASI */
+    .kuliner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* ARTIKEL */
+    .artikel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* HALAMAN PULAU */
+    .grid-6 {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    /* FORM */
+    .form-box {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* =========================
+   RESPONSIVE VERY SMALL (<480px)
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        gap: 6px;
+    }
+
+    .grid-6 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

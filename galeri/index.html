@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri – Rasa Nusantara</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* GRID GALERI */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.07);
+        }
+
+        /* VIDEO SECTION */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-thumb {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .video-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Rasa Nusantara</div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tentang.html">Tentang Kami</a></li>
+
+                <li class="dropdown">
+                    <a href="../kuliner/index.html">Kuliner Nusantara</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../kuliner/sumatera.html">Sumatera</a></li>
+                        <li><a href="../kuliner/jawa.html">Jawa</a></li>
+                        <li><a href="../kuliner/kalimantan.html">Kalimantan</a></li>
+                        <li><a href="../kuliner/sulawesi.html">Sulawesi</a></li>
+                        <li><a href="../kuliner/bali-ntt.html">Bali & Nusa Tenggara</a></li>
+                        <li><a href="../kuliner/papua.html">Papua</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../artikel/index.html">Cerita Dibalik Rasa</a></li>
+                <li><a href="../umkm/index.html">Kolaborasi UMKM</a></li>
+                <li><a class="active" href="../galeri/index.html">Galeri</a></li>
+                <li><a href="../kontak/index.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="container" style="padding: 60px 0;">
+        <h1>Galeri Rasa Nusantara</h1>
+        <p>Kumpulan foto kuliner Nusantara dari Sabang sampai Merauke.</p>
+
+        <!-- FOTO MAKANAN -->
+        <div class="gallery-grid">
+
+            <!-- SUMATERA -->
+            <div class="gallery-item"><img src="../assets/img/rendang.jpg" alt=""></div>
+            <div class="gallery-item"><img src="../assets/img/pempek.jpg" alt=""></div>
+
+            <!-- JAWA -->
+            <div class="gallery-item"><img src="../assets/img/gudeg.jpg" alt=""></div>
+            <div class="gallery-item"><img src="../assets/img/rawon.jpg" alt=""></div>
+
+            <!-- KALIMANTAN -->
+            <div class="gallery-item"><img src="../assets/img/sotobanjar.jpg" alt=""></div>
+
+            <!-- SULAWESI -->
+            <div class="gallery-item"><img src="../assets/img/coto-makassar.jpg" alt=""></div>
+
+            <!-- BALI & NTT -->
+            <div class="gallery-item"><img src="../assets/img/ayam-betutu.jpg" alt=""></div>
+
+            <!-- PAPUA -->
+            <div class="gallery-item"><img src="../assets/img/papeda.jpg" alt=""></div>
+
+        </div>
+
+        <!-- VIDEO SECTION -->
+        <h2 style="margin-top: 60px;">Video Kuliner Nusantara</h2>
+        <p>Jelajahi cerita melalui video pilihan kami.</p>
+
+        <div class="video-grid">
+
+            <a class="video-card" href="https://youtu.be/O6c3I0Ya6No?si=kD9q6PcEzHFqjllY" target="_blank">
+                <img class="video-thumb" src="https://img.youtube.com/vi/O6c3I0Ya6No/hqdefault.jpg">
+                <h3>Sejarah Rendang</h3>
+            </a>
+
+            <a class="video-card" href="https://youtu.be/VCYPSTmmlro?si=A6urpwk2RZO1g0e5" target="_blank">
+                <img class="video-thumb" src="https://img.youtube.com/vi/VCYPSTmmlro/hqdefault.jpg">
+                <h3>10 Kuliner Terpopuler Khas Pulau Jawa..!!! Harus Di Coba...!!</h3>
+            </a>
+
+            <a class="video-card" href="https://www.youtube.com/watch?v=X8NXD6dv1po" target="_blank">
+                <img class="video-thumb" src="https://img.youtube.com/vi/fj2xxbx_OHQ/hqdefault.jpg">
+                <h3>Perjalanan Jalur Rempah Nusantara</h3>
+            </a>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Rasa Nusantara | Sabang - Merauke</p>
+    </footer>
+
+</div>
+</body>
+</html>

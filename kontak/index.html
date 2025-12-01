@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak – Rasa Nusantara</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* CARD FORM KONTAK */
+        .contact-card {
+            max-width: 650px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .contact-card h2 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 13px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: 0.2s;
+        }
+
+        .form-input:focus {
+            border-color: var(--brown);
+            outline: none;
+            box-shadow: 0 0 6px rgba(139, 69, 19, 0.3);
+        }
+
+        .form-textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: var(--brown);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: var(--orange);
+            color: var(--dark);
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Rasa Nusantara</div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tentang.html">Tentang Kami</a></li>
+
+                <li class="dropdown">
+                    <a href="../kuliner/index.html">Kuliner Nusantara</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../kuliner/sumatera.html">Sumatera</a></li>
+                        <li><a href="../kuliner/jawa.html">Jawa</a></li>
+                        <li><a href="../kuliner/kalimantan.html">Kalimantan</a></li>
+                        <li><a href="../kuliner/sulawesi.html">Sulawesi</a></li>
+                        <li><a href="../kuliner/bali-ntt.html">Bali & Nusa Tenggara</a></li>
+                        <li><a href="../kuliner/papua.html">Papua</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../artikel/index.html">Cerita Dibalik Rasa</a></li>
+                <li><a href="../umkm/index.html">Kolaborasi UMKM</a></li>
+                <li><a href="../galeri/index.html">Galeri</a></li>
+                <li><a class="active" href="../kontak/index.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FORM KONTAK -->
+    <section class="container" style="padding: 60px 0;">
+
+        <div class="contact-card">
+            <h2>Hubungi Kami</h2>
+            <p style="text-align:center; margin-bottom:25px;">
+                Kirim pesan, pertanyaan, atau saran melalui formulir berikut.
+            </p>
+
+            <form>
+                <div class="form-group">
+                    <label>Nama</label>
+                    <input type="text" class="form-input" placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-input" placeholder="Masukkan email aktif">
+                </div>
+
+                <div class="form-group">
+                    <label>Pesan</label>
+                    <textarea class="form-input form-textarea" placeholder="Tulis pesan Anda..."></textarea>
+                </div>
+
+                <button class="submit-btn" type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Rasa Nusantara | Sabang - Merauke</p>
+    </footer>
+
+</div>
+</body>
+</html>

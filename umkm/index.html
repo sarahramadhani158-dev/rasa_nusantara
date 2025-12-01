@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolaborasi UMKM – Rasa Nusantara</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* FORM WRAPPER */
+        .umkm-wrapper {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+
+        .umkm-wrapper h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .umkm-wrapper p {
+            text-align: center;
+            margin-bottom: 35px;
+            color: #444;
+        }
+
+        /* FORM GRID */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            height: 140px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: var(--brown);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--orange);
+            color: var(--dark);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Rasa Nusantara</div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tentang.html">Tentang Kami</a></li>
+
+                <li class="dropdown">
+                    <a href="../kuliner/index.html">Kuliner Nusantara</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../kuliner/sumatera.html">Sumatera</a></li>
+                        <li><a href="../kuliner/jawa.html">Jawa</a></li>
+                        <li><a href="../kuliner/kalimantan.html">Kalimantan</a></li>
+                        <li><a href="../kuliner/sulawesi.html">Sulawesi</a></li>
+                        <li><a href="../kuliner/bali-ntt.html">Bali & Nusa Tenggara</a></li>
+                        <li><a href="../kuliner/papua.html">Papua</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../artikel/index.html">Cerita Dibalik Rasa</a></li>
+                <li><a class="active" href="../umkm/index.html">Kolaborasi UMKM</a></li>
+                <li><a href="../galeri/index.html">Galeri</a></li>
+                <li><a href="../kontak/index.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO BANNER -->
+    <section class="banner umkm-banner">
+        <h1>Kolaborasi UMKM</h1>
+        <p>Dukung UMKM lokal untuk berkembang dan dikenal lebih luas.</p>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="umkm-wrapper">
+
+        <h1>Formulir Pendaftaran UMKM</h1>
+        <p>Isi data usaha Anda untuk berkolaborasi bersama kami.</p>
+
+        <form>
+
+            <div class="form-group">
+                <label>Nama Usaha</label>
+                <input type="text" placeholder="Contoh: Dapoer Ibu Ana" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nama Pemilik</label>
+                <input type="text" placeholder="Nama lengkap pemilik usaha" required>
+            </div>
+
+            <div class="form-group">
+                <label>Kategori Usaha</label>
+                <select required>
+                    <option value="">-- Pilih Kategori --</option>
+                    <option>Makanan</option>
+                    <option>Minuman</option>
+                    <option>Snack / Cemilan</option>
+                    <option>Bumbu / Rempah</option>
+                    <option>Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Deskripsi Usaha</label>
+                <textarea placeholder="Ceritakan tentang usaha Anda…"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Kontak (WhatsApp / Email)</label>
+                <input type="text" placeholder="Contoh: 0812-3456-7890" required>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Foto Produk</label>
+                <input type="file" accept="image/*">
+            </div>
+
+            <button class="submit-btn" type="submit">Kirim Pendaftaran</button>
+
+        </form>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 Rasa Nusantara | Sabang - Merauke</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
